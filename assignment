@@ -1,0 +1,119 @@
+# Chapter 2
+greeting = "Hello! Welcome to Python programming."
+print(greeting)
+
+greeting = "Let's learn Python step by step!"
+print(greeting)
+
+first_name = "Amina"
+last_name = "Rashid"
+full_name = f"{first_name} {last_name}"
+print(f"My name is {full_name}.")
+
+author = "Rumi"
+quote = "The wound is the place where the Light enters you."
+print(f'{author} once said, "{quote}"')
+
+name_with_spaces = "   Zara   "
+print(f"Before stripping: '{name_with_spaces}'")
+print(f"After stripping: '{name_with_spaces.strip()}'")
+
+number = 10
+result = ((number + 5) * 2) - 3
+print(f"The final result is: {result}")
+
+a = 12
+b = 4
+print(f"Sum: {a + b}")
+print(f"Difference: {a - b}")
+print(f"Product: {a * b}")
+print(f"Quotient: {a / b}")
+
+num = 3
+square = num ** 2
+cube = num ** 3
+print(f"Square: {square}, Cube: {cube}")
+
+n1 = 1.5
+n2 = 2.3
+n3 = 3.7
+total = n1 + n2 + n3
+print(f"Sum: {total}")
+
+x, y, z = 5, 10, 15
+print(x, y, z)
+
+# Chapter 3
+fruits = ["apple", "banana", "mango", "orange", "grapes"]
+print(fruits[0])
+print(fruits[1])
+print(fruits[2])
+print(fruits[3])
+print(fruits[4])
+
+fruits[1] = "kiwi"
+print(f"Updated list: {fruits}")
+
+fruits.append("pineapple")
+fruits.insert(0, "cherry")
+print(f"After adding fruits: {fruits}")
+
+del fruits[2]
+print(f"After del: {fruits}")
+
+popped_fruit = fruits.pop()
+print(f"Popped: {popped_fruit}")
+print(f"After pop: {fruits}")
+
+fruits.remove("apple")
+print(f"After remove: {fruits}")
+
+print("Temporary sort:", sorted(fruits))
+print("Original list:", fruits)
+
+fruits.sort()
+print("Permanently sorted list:", fruits)
+
+destinations = ["Japan", "Norway", "Turkey", "Canada", "New Zealand"]
+destinations.sort()
+print("Sorted alphabetically:", destinations)
+
+destinations.reverse()
+print("Reversed order:", destinations)
+
+print("Total destinations:", len(destinations))
+
+guests = []
+guests.append("Ali")
+guests.append("Fatima")
+guests.append("Hassan")
+guests.insert(0, "Ayesha")
+guests.pop()
+print("Final guest list:")
+for guest in guests:
+    print(f"You're invited, {guest}!")
+
+numbers = [1, 2, 3, 4, 5, 6, 7]
+last_three = numbers[len(numbers)-3:len(numbers)]
+print(f"Last three elements: {last_three}")
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+even_nums = []
+for n in nums:
+    if n % 2 == 0:
+        even_nums.append(n)
+print("Even numbers:", even_nums)
+
+squares = []
+for i in range(1, 11):
+    squares.append(i ** 2)
+print("Squares of first 10 natural numbers:", squares)
+
+# Bonus Challenge
+movies = []
+for i in range(5):
+    movie = input(f"Enter favorite movie #{i+1}: ")
+    movies.append(movie)
+
+print("Sorted list of movies:")
+print(sorted(movies))
